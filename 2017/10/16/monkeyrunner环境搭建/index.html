@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>czlyj</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="monkeyrunner环境搭建 Monkeyrunner的环境搭建，需要安装以下工具：jdk、android sdk、python编译器。 1.文件下载下载地址:https://developer.android.google.cn/studio/index.html直接下载androidStudio 里面自带sdk -pythonpython 3.6.1 下载的zip文件下载地址:https:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="czlyj">
+<meta property="og:url" content="http://yoursite.com/2017/10/16/monkeyrunner环境搭建/index.html">
+<meta property="og:site_name" content="czlyj">
+<meta property="og:description" content="monkeyrunner环境搭建 Monkeyrunner的环境搭建，需要安装以下工具：jdk、android sdk、python编译器。 1.文件下载下载地址:https://developer.android.google.cn/studio/index.html直接下载androidStudio 里面自带sdk -pythonpython 3.6.1 下载的zip文件下载地址:https:">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-16T02:21:52.440Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="czlyj">
+<meta name="twitter:description" content="monkeyrunner环境搭建 Monkeyrunner的环境搭建，需要安装以下工具：jdk、android sdk、python编译器。 1.文件下载下载地址:https://developer.android.google.cn/studio/index.html直接下载androidStudio 里面自带sdk -pythonpython 3.6.1 下载的zip文件下载地址:https:">
+  
+    <link rel="alternative" href="/atom.xml" title="czlyj" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">czlyj</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-monkeyrunner环境搭建" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2017/10/16/monkeyrunner环境搭建/" class="article-date">
+  <time datetime="2017-10-16T02:21:51.497Z" itemprop="datePublished">2017-10-16</time>
+</a>
+		</span>
+		<span class="meta-elements author">housong</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+	</header>
+	<div class="entry-content">
+		
+    	<h1 id="monkeyrunner环境搭建"><a href="#monkeyrunner环境搭建" class="headerlink" title="monkeyrunner环境搭建"></a>monkeyrunner环境搭建</h1><p> Monkeyrunner的环境搭建，需要安装以下工具：jdk、android sdk、python编译器。</p>
+<p>1.文件下载<br>下载地址:<a href="https://developer.android.google.cn/studio/index.html" target="_blank" rel="external">https://developer.android.google.cn/studio/index.html</a><br>直接下载androidStudio 里面自带sdk</p>
+<p>-python<br>python 3.6.1 下载的zip文件<br>下载地址:<a href="https://www.python.org/downloads/release/python-361/" target="_blank" rel="external">https://www.python.org/downloads/release/python-361/</a></p>
+<p>-jdk<br>JDK8<br>下载地址:<br><a href="http://sw.bos.baidu.com/sw-search-sp/software/39d20f3cbb25a/jdk-8u131-windows-i586_8.0.1310.11.exe" target="_blank" rel="external">http://sw.bos.baidu.com/sw-search-sp/software/39d20f3cbb25a/jdk-8u131-windows-i586_8.0.1310.11.exe</a></p>
+<p>monkeyrunner.bat文件所在位置:E:\sdk\sdk\tools\bin<br>即在SDK的tools\bin目录下面,将此路径写在path里面 </p>
+<p>运行monkeyrunner,出现错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">C:\Users\Apptest&gt;monkeyrunner</div><div class="line">SWT folder &apos;..\framework\x86&apos; does not exist.</div><div class="line">Please set ANDROID_SWT to point to the folder containing swt.jar for your platform.</div></pre></td></tr></table></figure>
+<p>用记事本打开monkeyrunner.bat文件<br>修改以下位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">for /f %%a in (&quot;%APP_HOME%\lib\monkeyrunner-25.3.2.jar&quot;) do set jarfile=%%~nxa</div><div class="line">set frameworkdir=.</div><div class="line">set libdir=</div><div class="line">rem-----------------------------------------------------------------------</div><div class="line">rem 注释下面的4行</div><div class="line">rem if exist %frameworkdir%\%jarfile% goto JarFileOk</div><div class="line">rem   set frameworkdir=lib</div><div class="line"></div><div class="line">rem if exist %frameworkdir%\%jarfile% goto JarFileOk</div><div class="line">rem   set frameworkdir=..\framework</div><div class="line"></div><div class="line">rem 手动修改文件</div><div class="line">set frameworkdir=..\lib</div><div class="line">rem---------------------------------------------------------------------------</div><div class="line">:JarFileOk</div></pre></td></tr></table></figure>
+<p>然后执行monkeyrunner会发生adb找不到的错误<br>在tools下新建framework文件夹,复制adb.exe到此文件夹下.</p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/12/sqlalchemy使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">czlyj</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2017 housong<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
